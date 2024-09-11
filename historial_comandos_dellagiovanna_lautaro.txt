@@ -1,0 +1,170 @@
+vagrant ssh
+ls
+cd repogit/
+ls
+git clone https://github.com/LautaroDellagiovanna/utn_sistemasoperativos.git
+ls
+cd utn_sistemasoperativos/
+ls
+history
+history > historial.txt
+ls
+cat historial.txt 
+git add historial.txt 
+git status
+git commit -m "adding historial.txt"
+git config --global user.email "lau.dellag@gmail.com"
+git config --global user.name "LautaroDellagiovanna"
+git commit -m "adding historial.txt"
+git push origin master
+git push
+exit
+ls
+cd repogit/
+ls
+cd utn_sistemasoperativos/
+ls
+clear
+cd ..
+ls
+cleaer
+clear
+pwd
+clear
+ssh-keygen -t ed25519
+ls
+ls -a
+cd .ssh/
+ls
+cat id_ed25519.pub 
+cd ..
+ls
+cd repogit/
+ls
+cd utn_sistemasoperativos/
+ls
+git status
+git push
+ls
+ssh -T git@github.com
+git push origin master
+git push
+ssh -T git@github.com:LautaroDellagiovanna/utn_sistemasoperativos.git
+cd ..
+cd utn_sistemasoperativos/
+cd ..
+rm -r utn_sistemasoperativos/
+ls
+cd utn_sistemasoperativos/
+ls
+cd ..
+rm utn_sistemasoperativos/
+rm -r utn_sistemasoperativos/
+ls
+git clone git@github.com:LautaroDellagiovanna/utn_sistemasoperativos.git
+cd utn_sistemasoperativos/
+ls
+echo "hola" > hola.txt
+git status
+git add hola.txt 
+git commit -m "primer commit"
+git push
+cat /etc/passwd
+head /etc/passwd
+cd ..
+ls
+git clone git@github.com:LautaroDellagiovanna/TP_AySO.git
+cd TP_AySO/
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release
+grep --ignore-case Home_url /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+echo "usuario:$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git add datos_usuario.txt 
+git commit -m "ADD: agregando 1er ejercicio sobre datos_usuario.txt"
+git status
+ls /proc
+cat /proc/cpuinfo 
+man grep 
+grep -n processor /proc/cpuinfo 
+head -n27 /proc/cpuinfo >> datos_usuario.txt 
+cat datos_usuario.txt 
+echo "usuario:$(whoami)" > datos_usuario.txt
+head /proc/cpuinfo | grep "model name" 
+head /proc/cpuinfo | grep "model name" >> datos_usuario.txt 
+cat datos_usuario.txt 
+git status
+git add datos_usuario.txt 
+git commit -m "feat: Añadiendo información de CPU"
+git status
+cat /etc/passwd
+cat /etc/passwd | grep -i "nologin"
+man sort
+cat /etc/passwd | grep -i "nologin" | sort -k 7:
+cat /etc/passwd | grep -i "nologin" | sort -k 7
+man sort
+cat /etc/passwd | grep -i "nologin" | sort -k 7 --debug
+cat /etc/passwd | grep -i "nologin" | sort -k 6 --debug
+cat /etc/passwd | grep -i "nologin" | sort -k 7: --debug
+man sort
+cat /etc/passwd | grep -i "nologin" | sort --key=7 --debug
+cat /etc/passwd | grep -i "nologin" | sort --key=7: --debug
+cat /etc/passwd | grep -i "nologin" | sort --key=: --debug
+cat /etc/passwd | grep -i "nologin" | sort --key=2 --debug
+cat /etc/passwd | grep -i "nologin" | sort -k7 --debug
+man sort
+cat /etc/passwd | grep -i "nologin" | sort -t : -k7
+cat /etc/passwd | grep -i "nologin" | sort -t : -k7 --debug
+cat /etc/passwd | grep -i "nologin" | sort -t : -k7 > lista_ordenada
+cat lista_ordenada 
+git status
+rm sort\ via\ a\ key 
+git status
+git add lista_ordenada 
+git commit -m "ADD: Listado de usuarios ordenada"
+tcpdump 
+sudo tcpdump 
+echo "tcpdump" > comando_dump_net
+echo "sudo tcpdump" >> comando_dump_net 
+git status
+git add comando_dump_net 
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat << END >> file.txt
+Alumno: Lautaro
+División: 311
+Turno: Noche
+END
+
+ls
+var file.txt 
+car file.txt 
+cat file.txt 
+rm README.md 
+cat << END >> README.md 
+Alumno: Lautaro Dellagiovanna
+División: 311
+Turno: Noche
+END
+
+cat README.md 
+cat << END > README.md 
+# TP_AySO
+
+Alumno: Dellagiovanna Lautaro
+División: 311
+Turno: Noche
+END
+
+cat README.md 
+git status
+git add README.md 
+git commit -m "docs: Añadiendo datos del alumno"
+history -a ~/.bash_history 
+man history
+history -a
